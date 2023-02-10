@@ -4,12 +4,12 @@
 Версия JDK 17.0.2  
 Система сборки Maven (Version 3.8.1)  
 Сторонние библиотеки: Project Lombok 1.18.24  
-        <dependency>  
-            <groupId>org.projectlombok</groupId>  
-            <artifactId>lombok</artifactId>  
-            <version>1.18.24</version>  
-            <scope>provided</scope>  
-        </dependency>  
+       ` <dependency>  `\
+           `    <groupId>org.projectlombok</groupId>`\
+           `    <artifactId>lombok</artifactId>  `\
+           `    <version>1.18.24</version>  `\
+           `    <scope>provided</scope>  `\
+      `  </dependency> ` 
 
 
 
