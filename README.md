@@ -9,7 +9,8 @@
             <artifactId>lombok</artifactId>  
             <version>1.18.24</version>  
             <scope>provided</scope>  
-        dependency
+        </dependency>  
+
 
 
 Параметры программы задаются при запуске через аргументы командной строки:  
