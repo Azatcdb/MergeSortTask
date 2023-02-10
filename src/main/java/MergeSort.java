@@ -12,6 +12,7 @@ import java.util.regex.Pattern;
 @Setter
 public class MergeSort {
 
+    private final String currentDir = System.getProperty("user.dir");
     private String sortMode;
     private String typeOfData;
     private String outputFileName;
@@ -19,7 +20,7 @@ public class MergeSort {
     private final long tempFileSize = Runtime.getRuntime().totalMemory();
 
     public void setInputFileName(String name) {
-        this.inputFileName.add(name);
+        this.inputFileName.add(currentDir+"\\" + name);
     }
 
     public void setArgs(String[] args) throws IOException {
@@ -30,7 +31,7 @@ public class MergeSort {
         ) {
             if (s.endsWith(".txt")) {
                 if (outputFileName == null) {
-                    this.setOutputFileName(s);
+                    this.setOutputFileName(currentDir+"\\" +s);
                 } else {
                     this.setInputFileName(s);
                 }
